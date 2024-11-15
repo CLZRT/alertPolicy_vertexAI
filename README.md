@@ -1,0 +1,2 @@
+# alertPolicy_vertexAI
+用Terraform 创建 GCP上的监控政策，实现对Gemini或Claude3用量的监控
