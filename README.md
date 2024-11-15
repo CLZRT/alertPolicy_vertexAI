@@ -1,5 +1,5 @@
 # alertPolicy_vertexAI
-用Terraform 创建 GCP上的监控政策，实现对Gemini或Claude3用量的监控
+用Terraform 创建 GCP上的监控政策，实现对Gemini或Claude3用量的监控（**监控一小时的用量**）
 
 ### 0. 进入Cloud Shell
 
@@ -29,9 +29,9 @@ terraform apply
 >
 > var.project_id "要监控Gemini 和Claude3用量的项目id"
 >
-> var.token_threshold "Gemini 或者Claude3 输入用量的阈值"
+> var.token_threshold "Gemini 或者Claude3 输入用量的阈值，当一小时的模型输入大于阈值时发送告警邮件"
 >
-> var.request_threshold "Gemini 或者Claude3 输出用量的阈值"
+> var.request_threshold "Gemini 或者Claude3 输出用量的阈值，当一小时的模型输出大于阈值时发送告警邮件"
 
 ### 5. 删除相关资源
 
