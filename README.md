@@ -3,7 +3,7 @@
 
 ### 0. 进入Cloud Shell
 
-![image-20241115150403151](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241115150403151.png)
+![image-20241115150403151](image-20241115150403151.png)
 
 ### 1.克隆本项目到本地 并进入工作目录
 
