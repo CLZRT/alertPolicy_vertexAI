@@ -21,8 +21,8 @@ terraform init
 
 > 参考阈值参数设置
 >
-> - 输入阈值：1000,0000token,
-> - 输出阈值：200,0000token
+> - 输入阈值：10000000
+> - 输出阈值：2000000
 
 ```shell
 terraform apply -var="email=Your_Email" -var="project_id=Your_ProjectId" -var="token_threshold=Your_input_threshold" -var="request_threshold=Your_output_threshold"
