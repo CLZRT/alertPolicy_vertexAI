@@ -19,8 +19,13 @@ terraform init
 
 ### 3. 创建 告警政策
 
+> 参考阈值参数设置
+>
+> - 输入阈值：1000,0000token,
+> - 输出阈值：200,0000token
+
 ```shell
-terraform apply
+terraform apply -var="email=Your_Email" -var="project_id=Your_ProjectId" -var="token_threshold=Your_input_threshold" -var="request_threshold=Your_output_threshold"
 ```
 
 ### 4. 输入关键参数
@@ -29,13 +34,13 @@ terraform apply
 >
 > var.project_id "要监控Gemini 和Claude3用量的项目id"
 >
-> var.token_threshold "Gemini 或者Claude3 输入用量的阈值，当一小时的模型输入大于阈值时发送告警邮件"
+> var.token_threshold "Gemini 或者Claude3 输入用量的阈值，当一小时的模型输入大于阈值时发送告警邮件" 
 >
-> var.request_threshold "Gemini 或者Claude3 输出用量的阈值，当一小时的模型输出大于阈值时发送告警邮件"
+> var.request_threshold "Gemini 或者Claude3 输出用量的阈值，当一小时的模型输出大于阈值时发送告警邮件" 
 
 ### 5. 删除相关资源
 
 ```shell
-terraform destroy
+terraform destroy -var="email=Your_Email" -var="project_id=Your_ProjectId" -var="token_threshold=Your_input_threshold" -var="request_threshold=Your_output_threshold"
 ```
 
